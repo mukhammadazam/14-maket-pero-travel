@@ -169,10 +169,6 @@ header {
         background-repeat: no-repeat;
         padding: 20px;
     }
-    .label,
-    input[type="checkbox"]:checked+.nav__div-ul {
-        display: block;
-    }
     .header {
         min-width: 428px;
         flex-direction: column;
@@ -212,7 +208,7 @@ header {
         &__img1 {
             display: none;
         }
-        left: 20px;
+        left: 125px;
         top: 100px;
     }
 }
