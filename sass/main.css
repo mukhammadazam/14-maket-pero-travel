@@ -20,6 +20,7 @@ header {
   background-position: center;
   background-size: cover;
   padding-top: 30px;
+  padding-bottom: 132px;
 }
 
 .nav {
@@ -40,6 +41,10 @@ header {
   line-height: 17px;
   color: #FFFFFF;
 }
+.nav label,
+.nav input {
+  display: none;
+}
 
 .burger {
   display: none;
@@ -51,10 +56,10 @@ header {
   justify-content: space-between;
 }
 .header__left {
-  padding-top: 132px;
   position: relative;
 }
 .header__title {
+  padding-top: 152px;
   margin-bottom: 20px;
   font-family: "Montserrat";
   font-style: normal;
@@ -102,9 +107,9 @@ header {
 }
 
 .hero {
-  position: fixed;
-  left: 850px;
-  top: 415px;
+  position: relative;
+  left: 750px;
+  top: 250px;
 }
 .hero__img1 {
   display: none;
@@ -146,11 +151,11 @@ header {
   }
   .header__leni {
     left: 330px;
-    top: 175px;
+    top: 185px;
   }
   .hero {
     left: 300px;
-    top: 80px;
+    top: 230px;
   }
   .hero__img {
     display: none;
@@ -164,6 +169,10 @@ header {
     background-image: url(../../imges/mobilebground.png);
     background-repeat: no-repeat;
     padding: 20px;
+  }
+  .label,
+input[type=checkbox]:checked + .nav__div-ul {
+    display: block;
   }
   .header {
     min-width: 428px;
@@ -190,11 +199,11 @@ header {
   }
   .header__leni {
     left: 198px;
-    top: 160px;
+    top: 180px;
   }
   .hero {
-    left: 70px;
-    top: 80px;
+    left: 20px;
+    top: 100px;
   }
   .hero__img3 {
     display: block;
