@@ -102,18 +102,16 @@ header {
 }
 
 .hero {
-  position: relative;
-  left: 950px;
-  top: 120px;
+  position: fixed;
+  left: 850px;
+  top: 415px;
 }
 .hero__img1 {
   display: none;
 }
-
 .hero__img2 {
   display: none;
 }
-
 .hero__img3 {
   display: none;
 }
