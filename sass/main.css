@@ -1,0 +1,120 @@
+@font-face {
+  font-family: "Montserrat";
+  src: url(../fonts/Montserrat-Regular.ttf);
+}
+* {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+
+header {
+  background-image: url(../../imges/orqa-fon.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.nav {
+  padding-top: 30px;
+  padding-bottom: 152px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.nav__list {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+.nav__list .item__link {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  color: #FFFFFF;
+}
+
+.burger {
+  display: none;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+}
+.header__left {
+  position: relative;
+}
+.header__title {
+  margin-bottom: 20px;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 72px;
+  line-height: 88px;
+  color: #FFFFFF;
+}
+.header__leni {
+  position: absolute;
+  left: 530px;
+  top: 65px;
+}
+.header__btn {
+  display: block;
+  background: linear-gradient(92.71deg, #0499DD 0%, #17C1BC 100%);
+  border-radius: 60px;
+  border: none;
+  padding: 16px 72px 16px 56px;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 17px;
+  color: #FFFFFF;
+  margin-top: 60px;
+}
+.header__logo1 {
+  position: relative;
+  z-index: 2;
+  bottom: 33px;
+  left: 163px;
+}
+.header__logo2 {
+  display: block;
+  gap: 22px;
+}
+
+.logo2 {
+  padding-top: 22px;
+  padding-bottom: 22px;
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    max-width: 768px;
+    padding: 30px 79px;
+  }
+  .nav {
+    padding-top: 30px;
+  }
+  .nav__list {
+    display: none;
+  }
+  .burger {
+    display: flex;
+  }
+}
+.container {
+  max-width: 1140px;
+  padding: 0 10px;
+  width: 100%;
+  margin: 0 auto;
+}/*# sourceMappingURL=main.css.map */

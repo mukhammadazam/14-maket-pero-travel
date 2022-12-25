@@ -1,0 +1,109 @@
+* {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+header {
+    background-image: url(../../imges/orqa-fon.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+    object-fit: cover;
+}
+
+.nav {
+    padding-top: 30px;
+    padding-bottom: 152px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    &__list {
+        display: flex;
+        align-items: center;
+        gap: 30px;
+        .item__link {
+            font-family: 'Montserrat';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 17px;
+            color: #FFFFFF;
+        }
+    }
+}
+
+.burger {
+    display: none;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    &__left {
+        position: relative;
+    }
+    position: relative;
+    &__title {
+        margin-bottom: 20px;
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 72px;
+        line-height: 88px;
+        color: #FFFFFF;
+    }
+    &__leni {
+        position: absolute;
+        left: 530px;
+        top: 65px;
+    }
+    &__btn {
+        display: block;
+        background: linear-gradient(92.71deg, #0499DD 0%, #17C1BC 100%);
+        border-radius: 60px;
+        border: none;
+        padding: 16px 72px 16px 56px;
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 17px;
+        color: #FFFFFF;
+        margin-top: 60px;
+    }
+    &__logo1 {
+        position: relative;
+        z-index: 2;
+        bottom: 33px;
+        left: 163px;
+    }
+    &__logo2 {
+        display: block;
+        gap: 22px;
+    }
+}
+
+.logo2 {
+    padding-top: 22px;
+    padding-bottom: 22px;
+}
+
+@media screen and (max-width:768px) {
+    .container {
+        max-width: 768px;
+        padding: 30px 79px;
+    }
+    .nav {
+        padding-top: 30px;
+    }
+    .nav__list {
+        display: none;
+    }
+    .burger {
+        display: flex;
+    }
+}
