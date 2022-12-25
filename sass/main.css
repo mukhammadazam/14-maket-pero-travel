@@ -10,18 +10,19 @@
   box-sizing: border-box;
 }
 
+body {
+  overflow-x: hidden;
+}
+
 header {
   background-image: url(../../imges/orqa-fon.jpg);
   background-repeat: no-repeat;
   background-position: center;
-  background-size: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  background-size: cover;
+  padding-top: 30px;
 }
 
 .nav {
-  padding-top: 30px;
-  padding-bottom: 152px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -48,9 +49,9 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  position: relative;
 }
 .header__left {
+  padding-top: 132px;
   position: relative;
 }
 .header__title {
@@ -62,10 +63,13 @@ header {
   line-height: 88px;
   color: #FFFFFF;
 }
+.header .header__img1 {
+  display: none;
+}
 .header__leni {
   position: absolute;
-  left: 530px;
-  top: 65px;
+  left: 520px;
+  top: 200px;
 }
 .header__btn {
   display: block;
@@ -97,19 +101,111 @@ header {
   padding-bottom: 22px;
 }
 
+.hero {
+  position: relative;
+  left: 950px;
+  top: 120px;
+}
+.hero__img1 {
+  display: none;
+}
+
+.hero__img2 {
+  display: none;
+}
+
+.hero__img3 {
+  display: none;
+}
+
 @media screen and (max-width: 768px) {
-  .container {
-    max-width: 768px;
-    padding: 30px 79px;
+  header {
+    background-image: url(../../imges/planshedbground.jpg);
+    background-repeat: no-repeat;
   }
   .nav {
-    padding-top: 30px;
+    padding-top: 0px;
   }
   .nav__list {
     display: none;
   }
   .burger {
     display: flex;
+  }
+  .header__left .header__img {
+    display: none;
+  }
+  .header__left .header__img1 {
+    display: block;
+  }
+  .header__title {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 59px;
+    color: #FFFFFF;
+  }
+  .header__leni {
+    left: 330px;
+    top: 175px;
+  }
+  .hero {
+    left: 300px;
+    top: 80px;
+  }
+  .hero__img {
+    display: none;
+  }
+  .hero__img1 {
+    display: block;
+  }
+}
+@media screen and (max-width: 576px) {
+  header {
+    background-image: url(../../imges/mobilebground.png);
+    background-repeat: no-repeat;
+    padding: 20px;
+  }
+  .header {
+    min-width: 428px;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: end;
+  }
+  .header__left .hero__img2 {
+    display: block;
+  }
+  .header__left .header__img {
+    display: none;
+  }
+  .header__left__img1 {
+    display: none;
+  }
+  .header__title {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 44px;
+    color: #FFFFFF;
+  }
+  .header__leni {
+    left: 198px;
+    top: 160px;
+  }
+  .hero {
+    left: 70px;
+    top: 80px;
+  }
+  .hero__img3 {
+    display: block;
+  }
+  .hero__img {
+    display: none;
+  }
+  .hero__img1 {
+    display: none;
   }
 }
 .container {
