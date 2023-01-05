@@ -2,6 +2,10 @@
   font-family: "Montserrat";
   src: url(../fonts/Montserrat-Regular.ttf);
 }
+.galery {
+  position: relative;
+}
+
 .galery1 {
   display: flex;
   align-items: center;
@@ -23,6 +27,101 @@
   font-size: 12px;
   line-height: 15px;
   color: #282828;
+}
+
+.galeryy {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.galery2 {
+  background-image: url(../../imges/Rectangle13.jpg);
+  background-repeat: no-repeat;
+  margin-top: 90px;
+}
+.galery2__leni {
+  padding-top: 211px;
+  padding-left: 16px;
+  display: block;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 15px;
+  color: #FFFFFF;
+}
+.galery2__text {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 17px;
+  color: #FFC700;
+  padding-bottom: 10px;
+  padding-left: 16px;
+}
+.galery2__time {
+  padding-left: 16px;
+  display: flex;
+  align-items: center;
+  padding-bottom: 20px;
+}
+.galery2 .time__leni {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 15px;
+  color: #FFFFFF;
+  padding-left: 5px;
+}
+.galery2 .time__soqqa {
+  margin-left: 13px;
+  padding-right: 5px;
+}
+.galery2__text2 {
+  padding-left: 16px;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 15px;
+  max-width: 328px;
+  color: #FFFFFF;
+  padding-bottom: 20px;
+}
+.galery2__btn {
+  background: linear-gradient(92.71deg, #0499DD 0%, #17C1BC 100%);
+  border-radius: 40px;
+  padding: 12px 43px;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 15px;
+  color: #FFFFFF;
+  margin-left: 16px;
+  margin-bottom: 42px;
+  border: none;
+}
+
+.g2 {
+  background-image: url(../../imges/Rectangle3.png);
+  background-repeat: no-repeat;
+}
+
+.g3 {
+  background-image: url(../../imges/Rectangle.jpg);
+  background-repeat: no-repeat;
+}
+
+.galery3 {
+  background-image: url(../../imges/Rectangl3.jpg);
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 120px;
+  right: -250px;
 }
 
 * {
