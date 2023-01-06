@@ -1,15 +1,3 @@
-* {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    text-decoration: none;
-    box-sizing: border-box;
-}
-
-body {
-    overflow-x: hidden;
-}
-
 header {
     background-image: url(../../imges/orqa-fon.jpg);
     background-repeat: no-repeat;
@@ -102,10 +90,13 @@ input {
     padding-bottom: 22px;
 }
 
-.hero {
+.hero__container {
     position: relative;
-    left: 750px;
-    top: 250px;
+}
+
+.hero {
+    position: absolute;
+    right: -285px;
     &__img1 {
         display: none;
     }
@@ -177,8 +168,8 @@ input {
         &__img1 {
             display: block;
         }
-        left: 300px;
-        top: 230px;
+        right: -50px;
+        top: 50px;
     }
 }
 
@@ -223,14 +214,11 @@ input {
         right: 0;
         top: 0;
     }
-    input:checked~.nav .nav__list {
-        transform: translateY(0);
-    }
-    input:checked~.nav .nav-open {
-        display: none;
-    }
     .burger {
         display: block;
+    }
+    .header__right {
+        padding-bottom: 100px;
     }
     .header {
         min-width: 428px;
@@ -271,8 +259,8 @@ input {
         &__img1 {
             display: none;
         }
-        left: 125px;
-        top: 100px;
+        right: -50px;
+        top: -80px;
     }
     .burger {
         display: block;

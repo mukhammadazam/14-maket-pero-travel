@@ -1,8 +1,21 @@
 @import './fonts.scss';
-@import './_alblocs.scss/alblocs.scss';
+* {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+body {
+    overflow-x: hidden;
+}
+
 .container {
     max-width: 1140px;
     padding: 0 10px;
     width: 100%;
     margin: 0 auto;
 }
+
+@import './_alblocs.scss/alblocs.scss';

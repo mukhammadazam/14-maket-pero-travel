@@ -2,6 +2,25 @@
   font-family: "Montserrat";
   src: url(../fonts/Montserrat-Regular.ttf);
 }
+* {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+.container {
+  max-width: 1140px;
+  padding: 0 10px;
+  width: 100%;
+  margin: 0 auto;
+}
+
 .galery {
   position: relative;
 }
@@ -67,7 +86,7 @@
   align-items: center;
   padding-bottom: 20px;
 }
-.galery2 .time__leni {
+.galery2__time .time__leni {
   font-family: "Montserrat";
   font-style: normal;
   font-weight: 500;
@@ -124,18 +143,142 @@
   right: -250px;
 }
 
-* {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  text-decoration: none;
-  box-sizing: border-box;
+@media screen and (max-width: 768px) {
+  .g1 {
+    display: none;
+  }
+  .g2 {
+    max-width: 295px;
+    width: 100%;
+  }
+  .g3 {
+    display: none;
+  }
+  .galery3 {
+    background-image: url(../../imges/Rectangl3.jpg);
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 120px;
+    right: -260px;
+  }
+}
+@media screen and (max-width: 576px) {
+  .galery3 {
+    background-image: url(../../imges/Rectangl3.jpg);
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 120px;
+    right: -180px;
+  }
+  .galery2 {
+    max-width: 280px;
+    width: 100%;
+  }
+  .g2 {
+    display: none;
+  }
+}
+.border {
+  padding-top: 40px;
+  padding-bottom: 150px;
+  display: flex;
+  align-items: center;
+}
+.border__img3 {
+  margin-left: 50px;
+}
+.border__img2 {
+  padding-left: 38px;
 }
 
-body {
-  overflow-x: hidden;
+.nnnas {
+  background-image: url(../../imges/Rectangle4.jpg);
+  background-repeat: no-repeat;
+}
+.nnnas .nas {
+  padding: 198px;
+  padding-bottom: 241px;
+  margin-left: 600px;
+}
+.nnnas .nas__item {
+  width: 542px;
+  background: #EDEDED;
+  border-radius: 10px;
+  padding: 0 80px;
+  padding-top: 60px;
+  padding-bottom: 105px;
+}
+.nnnas .item__title {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 29px;
+  color: #0499DD;
+  padding-bottom: 41px;
+}
+.nnnas .item__text {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  max-width: 382px;
+  width: 100%;
+  color: #282828;
+}
+.nnnas .item__text2 {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  max-width: 382px;
+  width: 100%;
+  color: #282828;
+  padding-top: 20px;
 }
 
+@media screen and (max-width: 768px) {
+  .nnnas {
+    width: 504px;
+    background-image: url(../../imges/Rectangle4.jpg);
+    background-repeat: no-repeat;
+  }
+  .nnnas .nas {
+    padding-top: 198px;
+    padding-bottom: 241px;
+    margin-left: 0px;
+  }
+  .nnnas .nas__item {
+    width: 493px;
+    background: #EDEDED;
+    border-radius: 10px;
+    padding: 0 50px;
+    padding-top: 60px;
+    padding-bottom: 105px;
+  }
+}
+@media screen and (max-width: 576px) {
+  .nnnas {
+    width: 304px;
+    background-image: url(../../imges/Rectangle4.jpg);
+    background-repeat: no-repeat;
+  }
+  .nnnas .nas {
+    padding-top: 198px;
+    padding-bottom: 241px;
+    margin-left: -150px;
+  }
+  .nnnas .nas__item {
+    width: 380px;
+    background: #EDEDED;
+    border-radius: 10px;
+    padding: 0 40px;
+    padding-top: 60px;
+    padding-bottom: 105px;
+  }
+}
 header {
   background-image: url(../../imges/orqa-fon.jpg);
   background-repeat: no-repeat;
@@ -228,10 +371,13 @@ input {
   padding-bottom: 22px;
 }
 
-.hero {
+.hero__container {
   position: relative;
-  left: 750px;
-  top: 250px;
+}
+
+.hero {
+  position: absolute;
+  right: -285px;
 }
 .hero__img1 {
   display: none;
@@ -295,8 +441,8 @@ input {
     top: 185px;
   }
   .hero {
-    left: 300px;
-    top: 230px;
+    right: -50px;
+    top: 50px;
   }
   .hero__img {
     display: none;
@@ -346,14 +492,11 @@ input {
     right: 0;
     top: 0;
   }
-  input:checked ~ .nav .nav__list {
-    transform: translateY(0);
-  }
-  input:checked ~ .nav .nav-open {
-    display: none;
-  }
   .burger {
     display: block;
+  }
+  .header__right {
+    padding-bottom: 100px;
   }
   .header {
     min-width: 428px;
@@ -383,8 +526,8 @@ input {
     top: 180px;
   }
   .hero {
-    left: 125px;
-    top: 100px;
+    right: -50px;
+    top: -80px;
   }
   .hero__img3 {
     display: block;
@@ -398,10 +541,4 @@ input {
   .burger {
     display: block;
   }
-}
-.container {
-  max-width: 1140px;
-  padding: 0 10px;
-  width: 100%;
-  margin: 0 auto;
 }/*# sourceMappingURL=main.css.map */
